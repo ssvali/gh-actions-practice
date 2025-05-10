@@ -1,0 +1,9 @@
+name: Deployment Exercise 2
+on: issues
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check issue title
+        run: echo "${{github}}
+
