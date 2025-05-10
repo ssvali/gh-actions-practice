@@ -1,0 +1,7 @@
+name: Deploy Test Project
+on: push
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Lint
+      run: npm lint
