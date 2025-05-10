@@ -1,7 +1,8 @@
 name: Deploy Test Project
-on: push
+on: workflow_dispatch
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Lint
-      run: npm lint
+  lint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running lint
+        run: npm run lint
